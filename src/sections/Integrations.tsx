@@ -5,7 +5,6 @@ import slackLogo from "@/assets/images/slack-logo.svg";
 import relumeLogo from "@/assets/images/relume-logo.svg";
 import framerLogo from "@/assets/images/framer-logo.svg";
 import githubLogo from "@/assets/images/github-logo.svg";
-import { IntegrationCard } from "@/components/IntegrationCard";
 import Tag from "@/components/Tag";
 import { IntegrationsColumn } from "@/components/IntegrationsColumn";
 
@@ -65,6 +64,7 @@ export default function Integrations() {
             <IntegrationsColumn
               integrations={integrations.slice().reverse()}
               className="hidden md:flex"
+              reverse
             />
           </div>
         </div>
