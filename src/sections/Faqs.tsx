@@ -33,10 +33,10 @@ const faqs = [
 ];
 
 export default function Faqs() {
-  const [selectedIndex, setSelectedIndex] = React.useState<number | null>(null);
+  const [selectedIndex, setSelectedIndex] = React.useState<number | null>(0);
   return (
-    <section>
-      <div className="container">
+    <section className="py-24">
+      <div className="container mt-2">
         <div className="flex flex-col items-center justify-center">
           <Tag>FAQs</Tag>
           <h2 className="mx-auto mt-4 max-w-xl text-center text-6xl font-medium">
@@ -50,6 +50,7 @@ export default function Faqs() {
                 onClick={() =>
                   setSelectedIndex((prev) => (prev === index ? null : index))
                 }
+                key={index}
               >
                 <AccordionItem
                   key={index}
