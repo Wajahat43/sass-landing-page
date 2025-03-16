@@ -3,6 +3,7 @@
 import AccordionItem from "@/components/AccordionItem";
 import Tag from "@/components/Tag";
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 const faqs = [
   {
@@ -44,7 +45,12 @@ export default function Faqs() {
             <span className="text-lime-400">answers</span>
           </h2>
 
-          <div className="mx-auto mt-12 flex max-w-xl flex-col gap-4 md:gap-6">
+          <div
+            className={twMerge(
+              "mx-auto mt-12 flex max-w-xl flex-col gap-4 md:gap-6",
+              "min-w-[min(576px,100%)]",
+            )}
+          >
             {faqs.map((faq, index) => (
               <div
                 onClick={() =>

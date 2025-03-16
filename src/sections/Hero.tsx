@@ -8,6 +8,7 @@ import { Pointer } from "@/components/Pointer";
 import { motion, useAnimate } from "framer-motion";
 import { useEffect } from "react";
 import cursorYouImage from "@/assets/images/cursor-you.svg";
+import { twMerge } from "tailwind-merge";
 
 export default function Hero() {
   const [leftDesignScope, leftDesignAnimate] = useAnimate();
@@ -116,7 +117,7 @@ export default function Hero() {
           <input
             type="email"
             placeholder="Enter your email"
-            className="w-full flex-1 bg-transparent px-4"
+            className="w-full flex-1 bg-transparent px-4 outline-none"
           />
           <Button
             type="submit"

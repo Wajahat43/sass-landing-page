@@ -33,7 +33,11 @@ export default function Navbar() {
               <div className="hidden items-center justify-center lg:flex">
                 <nav className="flex gap-6 font-medium">
                   {navLinks.map((link) => (
-                    <a key={link.label} href={link.href}>
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      className="transition-transform duration-200 hover:scale-110"
+                    >
                       {link.label}
                     </a>
                   ))}
@@ -67,7 +71,7 @@ export default function Navbar() {
                   exit={{ height: 0 }}
                   className="overflow-hidden md:hidden"
                 >
-                  <div className="flex flex-col items-center gap-4 overflow-hidden py-4">
+                  <div className="flex flex-col items-center gap-4 overflow-hidden py-4 transition-transform duration-200 hover:scale-110">
                     {navLinks.map((link) => (
                       <a
                         key={link.label}

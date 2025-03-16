@@ -30,7 +30,7 @@ export default function Features() {
           Where power meets <span className="text-lime-400">simplicity</span>
         </h2>
 
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-4 lg:mt-24 lg:grid-cols-3">
           <FeatureCard
             title="Real-time Collaboration"
             description="Work together seamlessly with conflict-free team editing"
@@ -67,7 +67,7 @@ export default function Features() {
           <FeatureCard
             title="Interactive Prototyping"
             description="Engage your clients with prototypes that react to user actions"
-            className="group md:col-span-2 lg:col-span-1"
+            className="group md:col-span-2 lg:col-span-1 lg:-mt-10"
           >
             <div className="flex aspect-video items-center justify-center">
               <p className="text-center text-4xl font-extrabold text-white/20 transition duration-500 group-hover:text-white/10">
