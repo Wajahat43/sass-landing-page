@@ -36,15 +36,15 @@ export default function Faqs() {
   const [selectedIndex, setSelectedIndex] = React.useState<number | null>(0);
   return (
     <section className="py-24">
-      <div className="container mt-2">
+      <div className="container">
         <div className="flex flex-col items-center justify-center">
           <Tag>FAQs</Tag>
-          <h2 className="mx-auto mt-4 max-w-xl text-center text-6xl font-medium">
+          <h2 className="mx-auto mt-6 max-w-xl text-center text-6xl font-medium">
             Questions? We&apos;ve got{" "}
             <span className="text-lime-400">answers</span>
           </h2>
 
-          <div className="mx-auto mt-12 flex max-w-xl flex-col gap-4">
+          <div className="mx-auto mt-12 flex max-w-xl flex-col gap-4 md:gap-6">
             {faqs.map((faq, index) => (
               <div
                 onClick={() =>
