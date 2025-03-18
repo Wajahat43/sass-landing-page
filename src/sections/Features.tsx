@@ -71,7 +71,7 @@ export default function Features() {
           >
             <div className="flex aspect-video items-center justify-center">
               <p className="text-center text-4xl font-extrabold text-white/20 transition duration-500 group-hover:text-white/10">
-                We've achieved{" "}
+                We&apos;ve achieved{" "}
                 <span className="relative bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   <span>incredible</span>
                   <video

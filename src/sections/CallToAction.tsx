@@ -12,7 +12,7 @@ export default function CallToAction() {
       { x: "-50%" },
       { repeat: Infinity, duration: 30, ease: "linear" },
     );
-  }, []);
+  }, [animate, scope]);
 
   return (
     <section className="py-24">

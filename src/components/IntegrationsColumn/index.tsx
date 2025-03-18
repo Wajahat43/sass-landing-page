@@ -11,7 +11,7 @@ interface IntegrationColumnProps {
 }
 
 export const IntegrationsColumn = (props: IntegrationColumnProps) => {
-  const { integrations, className, reverse } = props;
+  const { integrations, reverse } = props;
   return (
     <motion.div
       initial={{ y: reverse ? "-50%" : 0 }}

@@ -8,7 +8,7 @@ interface IntegrationCardProps {
 }
 
 export const IntegrationCard = (props: IntegrationCardProps) => {
-  const { name, icon, description, className } = props;
+  const { name, icon, description } = props;
 
   return (
     <div className="flex aspect-video flex-col items-center justify-center gap-4 rounded-3xl border border-white/10 bg-neutral-900 p-6">

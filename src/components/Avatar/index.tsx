@@ -1,10 +1,7 @@
-import Image from "next/image";
-import { HTMLAttributes, ReactNode } from "react";
+import { HTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
-export interface AvatarProps extends HTMLAttributes<HTMLDivElement> {}
-
-export const Avatar = (props: AvatarProps) => {
+export const Avatar = (props: HTMLAttributes<HTMLDivElement>) => {
   const { children, className, ...rest } = props;
   return (
     <div
